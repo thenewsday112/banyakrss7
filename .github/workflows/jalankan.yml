@@ -80,7 +80,7 @@ jobs:
       # ============ 3. GOOGLE INDEXING API ============
       - name: Jalankan Google Indexing
         env:
-          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.index }}
         run: |
           echo "Menjalankan skrip pengiriman index ke Google..."
           python indexer.py
